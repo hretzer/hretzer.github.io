@@ -1,0 +1,158 @@
+</div>
+
+<div style="text-align: center">
+<h2 id="Ingredients" style="font-family: lucida handwriting;">Ingredients and Supplies</h2>
+
+<div style="position: relative; float: left; width: 45%; border-radius: 25px; background-color: white; color: darkslategray; margin: 2.3%; padding-bottom: 15px; border: dashed; border-width: 2px;">
+<p style="line-height: 1.8">Ingredients:</p>
+
+<div style="line-height: 0.1">
+<p>vegetables of choice, suggested include:</p>
+<p>cucumber</p>
+<p>carrot</p>
+<p>bell pepper</p>
+<p>asparagus</p>
+<p>avocado</p>
+<p>2 cups of uncooked sushi rice</p>
+<p>2 1/2 cups of water</p>
+<p>1/4 cup of rice vinegar</p>
+<p>1 pack of sushi nori</p>
+</div>
+</div>
+
+<div style="position: relative; float: right; width: 45%; border-radius: 25px; background-color: white; color: darkslategray; margin: 2.3%; padding-bottom: 15px; border: dashed; border-width: 2px;">
+<p style="line-height: 1.8">Supplies:</p>
+
+<div style="line-height: 0.1;">
+<p>sushi mat or clean towel</p>
+<p>any available knife</p>
+<p>microwave</p>
+<p>measuring cup</p>
+<p>spoon</p>
+<p>microwave-safe bowl</p>
+<p>cutting surface or plate</p>
+<p>ruler or tape measure</p>
+<p>scale</p>
+<p>level</p>
+</div>
+</div>
+</div>
+
+<div>
+<h2 id="Preparation" style="text-align: center; font-family: lucida handwriting;">Preparation</h2>
+
+<div class="morestuff">
+<blockquote><p>Now we arrive at the crafting of the components. This recipe begins with the cooking of the sushi rice. The grains will rise to perfect fullness in the confines of a college dorm microwave. Simply pour the quantities of rice and water into a microwave-safe bowl and cook for 10 to 12 minutes, or when the texture has reached desirable stickiness. Pour in the rice vinegar, stir until all elements have been incorporated on the molecular level, to create the most chemically homogenous mixture possible. Stop only at the breach of perfection.</p></blockquote>
+<blockquote><p>The reader will then approach the vegetables. Cutting boards are a rare sight in college dorms; however, paper plates are not. The reader is advised a scale with which to weigh the vegetables to ensure uniform quantities across rolls. A suggested quantity of 50 grams of vegetables should be placed in each roll. There are several combinations of vegetables deemed suitable for this recipe. Cucumber for lightness, carrot for crunch, bell pepper for sweetness, asparagus for bitterness, avocado for cream. Experimentation is encouraged. Vegetables will be chopped to exorbitant thinness and held against a blade of grass. If the width exceeds, the reader should proceed with another chop. The object here is goodness, after all, and goodness cannot be achieved in the absence of effort.</p></blockquote>
+<blockquote><p>For construction, the reader should begin laying the rice on each piece of nori. The height of the rice should not exceed 3/7 of an inch. Advisory permits the reader to move each individual grain of rice to promote uniformity. If again the reader has use of a scale, each rice-and-nori slab should be weighed to promote that uniformity to the precise hundredth of a gram. Once this process is complete, vegetables should be allotted their places in the center of the rice-and-nori slab. Each bundle of vegetables will again be weighed for uniformity. </p></blockquote>
+<blockquote><p>The sushi will be transferred onto a mat or towel and rolled into its final form. A reader may use a measuring tape to ensure the radius extending from the vegetables to the nori is consistent for every roll. If the reader finds an inconsistency, the sushi may be re-rolled until consistency is achieved.</p></blockquote>
+<blockquote><p>And the final step, of course, is the cutting of the sushi. Each roll should be 3/4 of an inch, verified through measuring. After the cutting, the quality of the cut should be assessed with use of a level tool. If the cut has not achieved an acceptable quality, it should be reattempted until level.</p></blockquote>
+<blockquote><p>And now, congratulations reader! You have constructed the most beautiful, the most harmonious, the most perfect college dorm vegan sushi known to humankind. You have traversed the depths of light and shadow to produce a roll that pulses and throbs with clockwork. You have stood in line with the ancients to bring the horn of antiquity to our sushi mats.</p></blockquote>
+</div>
+
+<div style="text-align: center">
+<img src="BrandNewVeganImage.jpg" alt="A picture of the perfect completed vegan sushi" width="50%" style="border-radius: 25px; border: dashed; color: white; border-width: 2px;">
+<p>Description: a picture of the perfect completed vegan sushi, sourced from <a href="https://www.brandnewvegan.com/recipes/homemade-vegan-sushi-rolls?">brandnewvegan.com</a></p>
+</div>
+
+<h2 id="HealthBenefits" style="text-align: center; font-family: lucida handwriting;" >Health Benefits</h2>
+
+<div class="morestuff">
+<blockquote><p>Sushi nori itself is a richly beneficial food in the vegan diet, as it offers a reliable source of vitamin B12 and iodine. Many adherents to the vegan diet are naturally deficient in those nutrients. The vegetables present in the sushi will likely be high in fiber, a supporter of gut health and regulated blood sugar.</p></blockquote>
+<blockquote><p>The benefits of perfectionism itself are numerous. Not only will the perfectionist succeed in making a (sometimes) perfect product, but one might also encounter disrupted sleep, imposter syndrome, social anxiety, autoimmune disorders, gut imbalances, depression, and many other happy side effects. Wield your perfectionism wisely.</p></blockquote>
+</div>
+
+</div>
+</div>
+</div>
+
+<footer class="footerclass">
+</footer>
+
+<script>
+function readText() {
+    const button = document.getElementById("ttsButton");
+
+    if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+        button.textContent = "Read Aloud";
+        return;
+    }
+
+    const text = document.getElementById("wholerecipe").innerText;
+
+    const speech = new SpeechSynthesisUtterance(text);
+
+    speech.lang = "en-US";
+    speech.rate = 1;
+    speech.pitch = 1;
+    speech.volume = 1;
+
+    speech.onend = function () {
+        button.textContent = "Read Aloud";
+    };
+
+    button.textContent = "Stop Reading";
+    window.speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+
+<style>
+
+.headerclass{
+	background-color: darkslategray;
+	color: white;
+	padding: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border: dashed;
+	border-width: 5px;
+	border-radius: 25px;
+}
+
+.footerclass{
+	text-align: center;
+	background-color: darkslategray;
+	color: white;
+	padding: 50px;
+	border-top: dashed;
+	border-width: 5px;
+}
+
+.firstdiv{
+	color: white;
+	background-color: darkslategrey;
+	width: 90%;
+	position: relative;
+	left: 4%;
+	padding: 10px;
+}
+
+.morestuff{
+	line-height: 1.8;
+	text-indent: 50px;
+	text-align: left;
+}
+
+#fullbackground{
+	background-image: linear-gradient(to top, darkslategray, darkseagreen);
+}
+
+a:visited {
+    color: white; /* Color for visited links */
+}
+a:hover {
+    color: white; /* Color when hovered over */
+}
+a:active {
+    color: white; /* Color when the link is clicked */
+}
+a:link {
+	color: white;
+}
+</style>
+</html>
